@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "WebViewController.h"
 
 @interface ViewController ()
 
@@ -19,6 +20,16 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+- (IBAction)normalJSInject:(id)sender {
+    WebViewController *webVC = [WebViewController new];
+    webVC.injectMethod = InjectAfterFinished;
+    [self.navigationController pushViewController:webVC animated:YES];
+}
+
+- (IBAction)specialJSInject:(id)sender {
+    
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

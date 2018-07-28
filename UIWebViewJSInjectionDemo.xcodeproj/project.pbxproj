@@ -15,6 +15,8 @@
 		DC78A18021077C0F000C09C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC78A17F21077C0F000C09C3 /* main.m */; };
 		DC78A18A21077C0F000C09C3 /* UIWebViewJSInjectionDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC78A18921077C0F000C09C3 /* UIWebViewJSInjectionDemoTests.m */; };
 		DC78A19521077C0F000C09C3 /* UIWebViewJSInjectionDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC78A19421077C0F000C09C3 /* UIWebViewJSInjectionDemoUITests.m */; };
+		DCA3C58C210CC229005D1189 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA3C58B210CC229005D1189 /* WebViewController.m */; };
+		DCA3C590210CC503005D1189 /* night_mode.js in Resources */ = {isa = PBXBuildFile; fileRef = DCA3C58F210CC503005D1189 /* night_mode.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		DC78A19021077C0F000C09C3 /* UIWebViewJSInjectionDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIWebViewJSInjectionDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC78A19421077C0F000C09C3 /* UIWebViewJSInjectionDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIWebViewJSInjectionDemoUITests.m; sourceTree = "<group>"; };
 		DC78A19621077C0F000C09C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCA3C58A210CC229005D1189 /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		DCA3C58B210CC229005D1189 /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		DCA3C58F210CC503005D1189 /* night_mode.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = night_mode.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +106,13 @@
 		DC78A16F21077C0F000C09C3 /* UIWebViewJSInjectionDemo */ = {
 			isa = PBXGroup;
 			children = (
+				DCA3C58F210CC503005D1189 /* night_mode.js */,
 				DC78A17021077C0F000C09C3 /* AppDelegate.h */,
 				DC78A17121077C0F000C09C3 /* AppDelegate.m */,
 				DC78A17321077C0F000C09C3 /* ViewController.h */,
 				DC78A17421077C0F000C09C3 /* ViewController.m */,
+				DCA3C58A210CC229005D1189 /* WebViewController.h */,
+				DCA3C58B210CC229005D1189 /* WebViewController.m */,
 				DC78A17621077C0F000C09C3 /* Main.storyboard */,
 				DC78A17921077C0F000C09C3 /* Assets.xcassets */,
 				DC78A17B21077C0F000C09C3 /* LaunchScreen.storyboard */,
@@ -240,6 +248,7 @@
 			files = (
 				DC78A17D21077C0F000C09C3 /* LaunchScreen.storyboard in Resources */,
 				DC78A17A21077C0F000C09C3 /* Assets.xcassets in Resources */,
+				DCA3C590210CC503005D1189 /* night_mode.js in Resources */,
 				DC78A17821077C0F000C09C3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +277,7 @@
 				DC78A17521077C0F000C09C3 /* ViewController.m in Sources */,
 				DC78A18021077C0F000C09C3 /* main.m in Sources */,
 				DC78A17221077C0F000C09C3 /* AppDelegate.m in Sources */,
+				DCA3C58C210CC229005D1189 /* WebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
