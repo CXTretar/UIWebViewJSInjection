@@ -17,6 +17,7 @@
 		DC78A19521077C0F000C09C3 /* UIWebViewJSInjectionDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC78A19421077C0F000C09C3 /* UIWebViewJSInjectionDemoUITests.m */; };
 		DCA3C58C210CC229005D1189 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA3C58B210CC229005D1189 /* WebViewController.m */; };
 		DCA3C590210CC503005D1189 /* night_mode.js in Resources */ = {isa = PBXBuildFile; fileRef = DCA3C58F210CC503005D1189 /* night_mode.js */; };
+		DCC9F77E2112E6A700F18838 /* CXWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC9F77D2112E6A700F18838 /* CXWebView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		DCA3C58A210CC229005D1189 /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		DCA3C58B210CC229005D1189 /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		DCA3C58F210CC503005D1189 /* night_mode.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = night_mode.js; sourceTree = "<group>"; };
+		DCC9F77C2112E6A700F18838 /* CXWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXWebView.h; sourceTree = "<group>"; };
+		DCC9F77D2112E6A700F18838 /* CXWebView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CXWebView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +116,8 @@
 				DC78A17421077C0F000C09C3 /* ViewController.m */,
 				DCA3C58A210CC229005D1189 /* WebViewController.h */,
 				DCA3C58B210CC229005D1189 /* WebViewController.m */,
+				DCC9F77C2112E6A700F18838 /* CXWebView.h */,
+				DCC9F77D2112E6A700F18838 /* CXWebView.m */,
 				DC78A17621077C0F000C09C3 /* Main.storyboard */,
 				DC78A17921077C0F000C09C3 /* Assets.xcassets */,
 				DC78A17B21077C0F000C09C3 /* LaunchScreen.storyboard */,
@@ -275,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC78A17521077C0F000C09C3 /* ViewController.m in Sources */,
+				DCC9F77E2112E6A700F18838 /* CXWebView.m in Sources */,
 				DC78A18021077C0F000C09C3 /* main.m in Sources */,
 				DC78A17221077C0F000C09C3 /* AppDelegate.m in Sources */,
 				DCA3C58C210CC229005D1189 /* WebViewController.m in Sources */,

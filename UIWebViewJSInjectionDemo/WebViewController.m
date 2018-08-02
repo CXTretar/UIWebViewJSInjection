@@ -7,6 +7,7 @@
 //
 
 #import "WebViewController.h"
+#import "CXWebView.h"
 
 @interface WebViewController ()<UIWebViewDelegate>
 
@@ -21,8 +22,13 @@
 }
 
 - (void)setupUI {
-    UIWebView *webView = [[UIWebView alloc]initWithFrame:self.view.bounds];
-    webView.delegate = self;
+    UIWebView *webView;
+    if (_injectMethod == InjectWhenLoading) {
+        webView = [[CXWebView alloc]initWithFrame:self.view.bounds];
+    }else {
+        webView = [[UIWebView alloc]initWithFrame:self.view.bounds];
+        webView.delegate = self;
+    }
     NSURL *url = [NSURL URLWithString:@"https://hao.360.cn/"];
     [webView loadRequest:[NSURLRequest requestWithURL:url]];
     [self.view addSubview:webView];

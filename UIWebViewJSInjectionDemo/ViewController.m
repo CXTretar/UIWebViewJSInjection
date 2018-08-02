@@ -27,7 +27,9 @@
 }
 
 - (IBAction)specialJSInject:(id)sender {
-    
+    WebViewController *webVC = [WebViewController new];
+    webVC.injectMethod = InjectWhenLoading;
+    [self.navigationController pushViewController:webVC animated:YES];
     
 }
 

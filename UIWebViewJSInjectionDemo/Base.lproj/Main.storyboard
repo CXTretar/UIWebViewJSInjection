@@ -38,13 +38,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJ0-tJ-Rjs">
-                                <rect key="frame" x="88" y="313.5" width="200" height="40"/>
+                                <rect key="frame" x="88" y="264" width="200" height="40"/>
                                 <color key="backgroundColor" white="0.81000000000000005" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="3d7-Qg-9Dd"/>
                                     <constraint firstAttribute="height" constant="40" id="Jnj-vz-iIf"/>
                                 </constraints>
-                                <state key="normal" title="Normal">
+                                <state key="normal" title="InjectAfterFinished">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -52,12 +52,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgr-Fg-bah">
-                                <rect key="frame" x="88" y="383.5" width="200" height="40"/>
+                                <rect key="frame" x="88" y="334" width="200" height="40"/>
                                 <color key="backgroundColor" white="0.81000000000000005" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="BuL-33-qRl"/>
                                 </constraints>
-                                <state key="normal" title="Special">
+                                <state key="normal" title="InjectWhenLoading">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -68,9 +68,9 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="jgr-Fg-bah" firstAttribute="top" secondItem="nJ0-tJ-Rjs" secondAttribute="bottom" constant="30" id="Rys-Ah-emU"/>
-                            <constraint firstItem="nJ0-tJ-Rjs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VJL-3J-l8b"/>
                             <constraint firstItem="jgr-Fg-bah" firstAttribute="centerX" secondItem="nJ0-tJ-Rjs" secondAttribute="centerX" id="dIp-GN-0Rf"/>
                             <constraint firstItem="nJ0-tJ-Rjs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="irF-k4-Sew"/>
+                            <constraint firstItem="nJ0-tJ-Rjs" firstAttribute="top" secondItem="8TN-2Q-CIA" secondAttribute="bottom" constant="200" id="ise-xb-oiP"/>
                             <constraint firstItem="jgr-Fg-bah" firstAttribute="height" secondItem="nJ0-tJ-Rjs" secondAttribute="height" id="nwv-3Z-za0"/>
                         </constraints>
                     </view>
