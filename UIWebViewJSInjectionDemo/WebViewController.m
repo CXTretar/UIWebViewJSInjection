@@ -22,16 +22,22 @@
 }
 
 - (void)setupUI {
-    UIWebView *webView;
-    if (_injectMethod == InjectWhenLoading) {
-        webView = [[CXWebView alloc]initWithFrame:self.view.bounds];
-    }else {
-        webView = [[UIWebView alloc]initWithFrame:self.view.bounds];
-        webView.delegate = self;
-    }
+    
     NSURL *url = [NSURL URLWithString:@"https://hao.360.cn/"];
-    [webView loadRequest:[NSURLRequest requestWithURL:url]];
-    [self.view addSubview:webView];
+    if (_injectMethod == InjectWhenLoading) {
+        CXWebView *webView = [[CXWebView alloc]initWithFrame:self.view.bounds];
+        [webView loadRequest:[NSURLRequest requestWithURL:url]];
+        [self.view addSubview:webView];
+    }else {
+        UIWebView *webView = [[UIWebView alloc]initWithFrame:self.view.bounds];
+        webView.delegate = self;
+        [webView loadRequest:[NSURLRequest requestWithURL:url]];
+        [self.view addSubview:webView];
+    }
+    //    NSURL *url = [NSURL URLWithString:@"https://hao.360.cn/"];
+    
+    //    https://mbd.baidu.com/newspage/data/landingpage?s_type=news&dsp=wise&context=%7B%22nid%22%3A%22news_9733004085931670566%22%7D&pageType=1&n_type=1&p_from=-1&innerIframe=1#viewportType=virtual&paddingTop=54&pageType=&pageInfo=
+    
 }
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
